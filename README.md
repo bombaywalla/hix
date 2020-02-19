@@ -76,3 +76,9 @@ I took inspiration and code from
 - <https://github.com/lambdaclass/holiday_ping>
 
 Please look at them as additional examples.
+
+## License
+
+Copyright © 2020 Dorab Patel
+
+Distributed under the MIT License.
