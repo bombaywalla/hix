@@ -1,39 +1,33 @@
 {
-    "name": "hix",
-    "version": "0.1.0",
-    "description": "An example front-end in Re-frame.",
-    "repository": "https://github.com/bombaywalla/hix",
-    "author": {
-	"name": "Dorab Patel"
-    },
-    "license": "MIT",
-
-    "scripts": {
-	"dev": "shadow-cljs -A:dev watch app",
-	"devcards": "shadow-cljs  -A:dev watch devcards",
-	"release": "shadow-cljs -A:prod release app",
-	"repl": "shadow-cljs cljs-repl app",
-	"stop": "shadow-cljs stop",
-	"server": "shadow-cljs server",
-	"compile-tests": "shadow-cljs -A:dev compile test",
-	"test": "karma start --single-run",
-	"clean": "rm -rf target; rm -rf resources/public/js"
-    },
-
-    "dependencies": {
-	"bulma": "^0.8.0",
-	"bulma-pricingtable": "^0.2.0",
-	"create-react-class": "^15.6.3",
-	"highlight.js": "^9.15.10",
-	"react": "^16.9.0",
-	"react-dom": "^16.9.0",
-	"react-highlight.js": "^1.0.7"
-    },
-
-    "devDependencies": {
-	"shadow-cljs" "^2.8.83",
-	"karma": "^4.4.1",
-	"karma-chrome-launcher": "^3.1.0",
-	"karma-cljs-test": "^0.1.0"
-    }
+			"name": "hix",
+			"version": "0.1.0",
+			"description": "An example front-end in Re-frame.",
+			"repository": "https://github.com/bombaywalla/hix",
+			"author": {
+						"name": "Dorab Patel"
+			},
+			"license": "MIT",
+			"scripts": {
+						"dev": "shadow-cljs -A:dev watch app",
+						"devcards": "shadow-cljs  -A:dev watch devcards",
+						"release": "shadow-cljs -A:prod release app",
+						"repl": "shadow-cljs cljs-repl app",
+						"stop": "shadow-cljs stop",
+						"compile-tests": "shadow-cljs -A:dev compile test",
+						"test": "karma start --single-run",
+						"clean": "rm -rf target; rm -rf resources/public/js"
+			},
+			"dependencies": {
+						"bulma": "^0.8.0",
+						"bulma-pricingtable": "^0.2.0",
+						"highlight.js": "^9.15.10",
+						"react": "^16.12.0",
+						"react-dom": "^16.12.0"
+			},
+			"devDependencies": {
+						"shadow-cljs": "^2.8.83",
+						"karma": "^4.4.1",
+						"karma-chrome-launcher": "^3.1.0",
+						"karma-cljs-test": "^0.1.0"
+			}
 }
