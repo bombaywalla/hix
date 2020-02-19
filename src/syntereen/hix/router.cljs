@@ -21,7 +21,7 @@
   }])
 
 (def history
-  (let [dispatch #(rf/dispatch 
+  (let [dispatch #(rf/dispatch
                    [:set-active-page {:page      (:handler %)
                                       :profile   (get-in % [:route-params :user-id])}])
         match #(bidi/match-route routes %)]

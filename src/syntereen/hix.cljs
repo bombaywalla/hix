@@ -3,11 +3,11 @@
             [reagent.core :as r]
             [syntereen.hix.config :as config]
             [syntereen.hix.router :as router]
-            
+
             ;; to make the compiler load these
             [syntereen.hix.events]
             [syntereen.hix.subs]
-            
+
             [syntereen.hix.common.views :as common]
             [syntereen.hix.auth.views :as auth]
             [syntereen.hix.views :as views]
