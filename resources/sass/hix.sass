@@ -1,0 +1,11 @@
+// The main file for Hix CSS.
+// To generate the CSS file, use
+// cd hix
+// sass -I node_modules/bulma -I node_modules/bulma-pricingtable/dist/css resources/sass/hix.sass resources/public/css/hix.css
+//
+
+@import 'hix_variables'
+// TODO: Import only those parts of bulma that are needed.
+@import 'bulma'
+@import 'hix_overrides'
+@import 'bulma-pricingtable'
