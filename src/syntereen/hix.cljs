@@ -7,6 +7,8 @@
             ;; to make the compiler load these
             [syntereen.hix.events]
             [syntereen.hix.subs]
+            [syntereen.hix.db]
+            [syntereen.hix.auth.events]
 
             [syntereen.hix.common.views :as common]
             [syntereen.hix.auth.views :as auth]
