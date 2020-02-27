@@ -10,7 +10,7 @@
         com.andrewmcveigh/cljs-time {:mvn/version "0.5.2"}
         bidi {:mvn/version "2.1.5"} ; 2.1.6 has a failing build
         clj-commons/pushy {:mvn/version "0.3.10"}
-        fork {:mvn/version "1.2.4"}
+        fork {:mvn/version "1.2.5"}
         vlad {:mvn/version "3.3.2"}
         binaryage/devtools {:mvn/version "0.9.11"}
         }
