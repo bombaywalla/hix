@@ -55,20 +55,11 @@ npm install --save`
 
 2. Start `emacs` and visit the `deps.edn` file.
 
-3. Fire up a cider repl
-   1. `^U ^C M-J`
-   2. Type in `shadow` when prompted.
-   3. Edit the nrepl command to include `-A:dev` after `shadow-cljs`.
-   4. Type the `ENTER` key.
+3. Fire up a cider cljs repl
 
-4. In the cider repl buffer:
-```clojure
-	(shadow/watch :app)
-```
+	`C-c C-x j s`
 
-5. Open up a web browser and go tp <http://localhost:3000>
-
-
+4. Answer `y` when you are asked if you want to open a web browser.
 
 ## Credits
 
