@@ -5,15 +5,15 @@
 (def hix-config
   {"prod" {
           :debug? false
-          :api-url "https://example.server.com/api"
+          :api-url "https://example.server.com:5555/api"
           }
    "dev" {
           :debug? true
-          :api-url "http://localhost:5555/api"
+          :api-url "http://127.0.0.1:5554/api"
          }
    "test" {
           :debug? true
-          :api-url "http://localhost:5555/api"
+          :api-url "http://127.0.0.1:5556/api"
           }
    })
 
