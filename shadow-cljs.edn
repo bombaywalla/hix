@@ -8,7 +8,9 @@
 
                 :modules {:main {:init-fn syntereen.hix/init}}
 
-                :release {:closure-defines {syntereen.hix.config/ENV "prod"}}
+                :release {:closure-defines {syntereen.hix.config/ENV "prod"}
+                          :compiler-options {:optimizations :advanced
+                                             :infer-externs :auto}}
 
                 :dev {:closure-defines {syntereen.hix.config/ENV "dev"
                                         re-frame.trace/trace-enabled? true

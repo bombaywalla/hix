@@ -70,6 +70,20 @@ npm install --save
 
 Expect some re-frame warnings about overwriting handlers.
 
+## Running production
+
+1. Run a report for the release build.
+
+```shell
+	npx shadow-cljs -A:prod run shadow.cljs.build-report app /tmp/report.html
+```
+
+2. Create a production release build.
+
+```shell
+	$ shadow-cljs -A:prod release app
+```
+
 ## Credits
 
 I took inspiration and code from
