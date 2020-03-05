@@ -23,7 +23,7 @@ Note that these notes are for MacOS and `emacs` (with `cider` installed).
 2. Install shadow-cljs globally.
 
 ```shell
-	npm install --global shadow-cljs`
+	npm install --global shadow-cljs
 ```
 
 3. Make sure you are running `hax` before starting `hix` otherwise
@@ -34,13 +34,13 @@ Note that these notes are for MacOS and `emacs` (with `cider` installed).
 1. Clone this repo.
 
 ```shell
-	git clone https://github.com/bombaywalla/hix.git`
+	git clone https://github.com/bombaywalla/hix.git
 ```
 
 2. Set up node packages.
 
 ```shell
-npm install --save`
+npm install --save
 ```
 
 3. Run the `sass` processor to generate the CSS for `hix`.
@@ -60,6 +60,15 @@ npm install --save`
 	`C-c C-x j s`
 
 4. Answer `y` when you are asked if you want to open a web browser.
+
+## Running tests
+
+```shell
+	$ shadow-cljs -A:test compile test
+	$ karma start --single-run
+```
+
+Expect some re-frame warnings about overwriting handlers.
 
 ## Credits
 

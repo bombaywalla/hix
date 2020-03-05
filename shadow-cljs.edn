@@ -40,6 +40,7 @@
           :test {:target :karma
                  :output-to "target/karma.js"
                  :ns-regexp "-test$"    ; default
+                 :closure-defines {syntereen.hix.config/ENV "test"}
                  }
           }}
 
