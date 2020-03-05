@@ -46,9 +46,7 @@
             (.getElementById js/document "app")))
 
 (defn ^:export init []
-  (js/console.log (str "ENV: " config/ENV))
   (config/init-config!)
-  (js/console.log (pr-str @config/hix-config))
   (dev-setup)
   (router/start!)
   (rf/dispatch-sync [:initialize-db])
