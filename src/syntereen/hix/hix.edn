@@ -1,0 +1,12 @@
+{
+ :api-url #profile {
+                    :prod "https://example.server.com:5555/api"
+                    :dev "http://127.0.0.1:5554/api"
+                    :test "http://127.0.0.1:5556/api"
+                    }
+ :debug? #profile {
+                   :prod false
+                   :dev true
+                   :test true
+                   }
+ }

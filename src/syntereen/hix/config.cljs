@@ -3,25 +3,14 @@
   (:require
    [aero.core :as aero]
    [cljs.tools.reader.reader-types :as rt]
+   [shadow.resource :as sr]
    )
   )
 
-;; NOTE: Not sure how to place this in a file
-;; for a browser-based CLJS.
-;; So, placed here.
+;; Reads file into var at compile time
+;; File relative to this ns.
 (def hix-aero-config
-  "{
-   :api-url #profile {
-                      :prod \"https://example.server.com:5555/api\"
-                      :dev \"http://127.0.0.1:5554/api\"
-                      :test \"http://127.0.0.1:5556/api\"
-                      }
-   :debug? #profile {
-                     :prod false
-                     :dev true
-                     :test true
-                     }
-   }")
+  (sr/inline "./hix.edn"))
 
 ;; This is the default.
 ;; Overridden in shadow-cljs.edn
